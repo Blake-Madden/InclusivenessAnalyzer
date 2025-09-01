@@ -36,7 +36,7 @@ jobs:
       contents: read
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Inclusiveness Analyzer
       uses: microsoft/InclusivenessAnalyzer@v1.0.1
