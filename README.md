@@ -23,15 +23,17 @@ Copy paste the following workflow definition into your project `.github/workflow
 # The scan will provide context on the found terms and alternatvies that can be
 # used instead.
 
-name: Inclusiveness Analyser scan
+name: Inclusiveness Analyzer scan
 
 on:
   push:
   workflow_dispatch:
 
 jobs:
-  Inclusiveness-Analyser-scan:
+  Inclusiveness-Analyzer-scan:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
